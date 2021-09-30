@@ -1,0 +1,52 @@
+/**
+ * 全局工具样式 - 公共按钮、弹出框 。。。
+ */
+/* ====================
+        layer
+ ====================== */
+// // 内容主体部分
+// .container {
+//     // 主体头部
+//     header {}
+
+//     // 主体侧栏
+//     .zmx_aside {
+//         min-width: 160px;
+//     }
+
+//     // 主体内容
+//     .zmx_main {
+//         // 主页部分
+//         .home_top {
+//             p {
+//                 // font-size: 20px;
+//             }
+//         }
+
+//         // 除主页所有内容页面
+//         /deep/ .main_cont {
+//             h2 {
+//                 // font-size: 16px;
+//             }
+//         }
+//     }
+// }
+
+.main_cont {
+    width: 100%;
+    height: calc(100vh - @headNavHeight);
+}
+
+
+/* ====================
+        表单下的按钮
+ ====================== */
+ .from_btn {
+    width: 52%;
+    margin: 0 auto;
+
+    /deep/ .el-form-item__content {
+        color: #f00;
+        margin-left: 0 !important;
+    }   
+}
