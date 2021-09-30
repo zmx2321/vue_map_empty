@@ -8,14 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <!-- <link href="static/Cesium/Widgets/widgets.css" rel="stylesheet"> -->
-    <title></title>
-    <script type="text/javascript">
-      window.basePathUrl = '<%= BASE_URL %>' //标识config、widgets所在的目录
-      window.CESIUM_BASE_URL = '<%= BASE_URL %>lib/Cesium-supermap/'
-    </script>
     <link rel="stylesheet" href="<%= BASE_URL %>lib/Cesium-supermap/Widgets/widgets.css" />
-    <script type="text/javascript" src="<%= BASE_URL %>lib/Cesium-supermap/Cesium.js"></script>
+    <title></title>
   </head>
   <body>
     <noscript>
@@ -25,7 +19,10 @@
     <!-- built files will be auto injected -->
     <script src="//cdn.bootcss.com/qs/6.5.2/qs.min.js"></script>
     <script src="js/common.js"></script>
-    <!-- <script src="static/Cesium/Cesium.js"></script> -->
-    <!-- <script src="static/Cesium/Workers/zlib.min.js"></script> -->
+    <script type="text/javascript">
+      window.basePathUrl = '<%= BASE_URL %>' //标识config、widgets所在的目录
+      window.CESIUM_BASE_URL = '<%= BASE_URL %>lib/Cesium-supermap/'
+    </script>
+    <script type="text/javascript" src="<%= BASE_URL %>lib/Cesium-supermap/Cesium.js"></script>
   </body>
 </html>

@@ -86,6 +86,8 @@ export default {
 
       this[`map${this.mapKey}`] = map
 
+      // console.clear();
+
       console.log('>>>>> 地图创建成功 >>>>', map)
 
       // 挂载到全局对象下，所有组件通过 this.map 访问

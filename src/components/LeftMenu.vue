@@ -85,15 +85,7 @@ export default {
                     path: "testsupermap",
                     children: [
                         { path: "/test_supermap1", name: "test_supermap1" },
-                    ]
-                },
-                // testcesiummap
-                {
-                    icon: "fa fa-bullseye",
-                    name: "testcesiummap",
-                    path: "testcesiummap",
-                    children: [
-                        { path: "/test_cesiummap1", name: "test_cesiummap1" },
+                        { path: "/test_supermap2", name: "test_supermap2" },
                     ]
                 },
                 {

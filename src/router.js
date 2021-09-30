@@ -117,11 +117,10 @@ const routes = [
         name: "test_supermap1",
         component: resolve => require(['@/views/test/supermaptest/TestSuperMap1'], resolve)
       },
-      // cesiumtest
       {
-        path: '/test_cesiummap1',
-        name: "test_cesiummap1",
-        component: resolve => require(['@/views/test/cesiumtest/TestCesiumMap1'], resolve)
+        path: '/test_supermap2',
+        name: "test_supermap2",
+        component: resolve => require(['@/views/test/supermaptest/TestSuperMap2'], resolve)
       },
 
       /**

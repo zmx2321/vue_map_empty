@@ -9,6 +9,7 @@
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
+    "@turf/turf": "^6.3.0",
     "ace-builds": "^1.4.12",
     "axios": "^0.21.4",
     "core-js": "^3.6.5",

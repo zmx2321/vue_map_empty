@@ -6,6 +6,7 @@ const webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const cesiumSource = 'node_modules/mars3d-cesium/Build/Cesium/'
+// console.log(cesiumSource)
 
 // const serverPath = process.env.VUE_APP_BASE_API;  // 配置文件也可以获取.env变量
 // console.log("env", serverPath)
@@ -102,7 +103,7 @@ module.exports = {
     }
   },
 
-  /* configureWebpack: (config) => {
+  configureWebpack: (config) => {
     let plugins = []
     if (process.env.NODE_ENV === 'production') {
       plugins = [
@@ -114,6 +115,7 @@ module.exports = {
         new CopyWebpackPlugin([{ from: path.join(cesiumSource, 'ThirdParty'), to: 'static/ThirdParty' }]),
         new CopyWebpackPlugin([{ from: path.join(cesiumSource, 'Widgets'), to: 'static/Widgets' }])
       ]
+      // console.log("production 333", plugins)
     } else {
       plugins = [
         new webpack.DefinePlugin({
@@ -124,6 +126,8 @@ module.exports = {
         new CopyWebpackPlugin([{ from: path.join(cesiumSource, 'ThirdParty'), to: 'ThirdParty' }]),
         new CopyWebpackPlugin([{ from: path.join(cesiumSource, 'Widgets'), to: 'Widgets' }])
       ]
+
+      // console.log("development 666", plugins)
     }
     return {
       module: {
@@ -141,17 +145,17 @@ module.exports = {
         usedExports: true,
         splitChunks: {
           maxInitialRequests: Infinity,
-          minSize: 0,
-          maxSize: 250000,
+          // minSize: 0,
+          // maxSize: 250000,
           cacheGroups: {
             vendor: {
               test: /[\\/]node_modules[\\/]/,
               priority: -10,
               chunks: 'all',
-              name(module) {
+              /* name(module) {
                 const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1]
                 return `npm.${packageName.replace('@', '')}`
-              }
+              } */
             },
             commons: {
               name: 'Cesium',
@@ -183,7 +187,7 @@ module.exports = {
       },
       plugins: plugins
     }
-  } */
+  }
 }
 
 
