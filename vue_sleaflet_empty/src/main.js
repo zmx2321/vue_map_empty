@@ -12,6 +12,10 @@ import 'element-ui/lib/theme-chalk/index.css'
 import md5 from 'js-md5';  //md5加密
 import i18n from '@/assets/i18n/i18n';  // 引入国际化组件
 
+import '@supermap/iclient-leaflet'
+import 'leaflet/dist/leaflet'
+import 'leaflet/dist/leaflet.css'
+
 Vue.config.productionTip = false
 
 // 全局注册

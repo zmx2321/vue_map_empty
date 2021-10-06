@@ -78,6 +78,17 @@ export default {
                         // { path: "/test_map9", name: "test_map9" },
                     ]
                 },
+                // testmap
+                {
+                    icon: "fa fa-bullseye",
+                    name: "leaflet",
+                    path: "leaflet",
+                    children: [
+                        { path: "/leaflet1", name: "leaflet1" },
+                        { path: "/leaflet2", name: "leaflet2" },
+                        { path: "/leaflet3", name: "leaflet3" },
+                    ]
+                },
                 {
                     icon: "fa fa-bullseye",
                     name: "超市管理",

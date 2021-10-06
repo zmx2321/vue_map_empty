@@ -111,6 +111,22 @@ const routes = [
         name: "test_map9",
         component: resolve => require(['@/views/test/maptest/TestMap9'], resolve)
       },
+      // leaflet
+      {
+        path: '/leaflet1',
+        name: "leaflet1",
+        component: resolve => require(['@/views/test/leaflettest/Leaflet1'], resolve)
+      },
+      {
+        path: '/leaflet2',
+        name: "leaflet2",
+        component: resolve => require(['@/views/test/leaflettest/Leaflet2'], resolve)
+      },
+      {
+        path: '/leaflet3',
+        name: "leaflet3",
+        component: resolve => require(['@/views/test/leaflettest/Leaflet3'], resolve)
+      },
 
       /**
        * 超市管理
