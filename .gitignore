@@ -1,7 +1,5 @@
 .DS_Store
 node_modules/
-dist/
-vue_map_empty/
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
