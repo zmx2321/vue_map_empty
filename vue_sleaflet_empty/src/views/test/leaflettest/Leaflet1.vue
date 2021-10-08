@@ -1175,12 +1175,21 @@ export default {
 
             supermap.tiledMapLayer(url).addTo(map); */
 
-            var map = L.map('map', {
+            var host = window.isLocal ? window.server : "https://iserver.supermap.io";
+            var map, url = host + "/iserver/services/map-china400/rest/maps/China";
+            map = L.map('map', {
+                // center: [97.73437500000001, 37.43997405227057],
+                // maxZoom: 18,
+                // zoom: 10
+            });
+            L.supermap.tiledMapLayer(url).addTo(map);
+
+            /* var map = L.map('map', {
                 center: [97.73437500000001, 37.43997405227057],
                 crs: L.CRS.EPSG3857,
                 zoom: 3
             });
-            L.supermap.cloudTileLayer("http://t2.dituhui.com/FileService/image").addTo(map);
+            L.supermap.cloudTileLayer("http://t2.dituhui.com/FileService/image").addTo(map); */
 
             //渲染方法
             var layerGeo = L.geoJSON(this.someFeatures, {
