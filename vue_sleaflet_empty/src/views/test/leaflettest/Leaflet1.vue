@@ -1184,6 +1184,8 @@ export default {
             });
             L.supermap.tiledMapLayer(url).addTo(map);
 
+            // map.setView({ lng: center[0], lat: center[1] });
+
             /* var map = L.map('map', {
                 center: [97.73437500000001, 37.43997405227057],
                 crs: L.CRS.EPSG3857,
