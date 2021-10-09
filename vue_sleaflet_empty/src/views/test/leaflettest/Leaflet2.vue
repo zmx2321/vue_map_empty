@@ -1,11 +1,12 @@
 <template>
     <section class="main_cont">
-        leaflet21
+        <div id="map"></div>
     </section>
 </template>
 
 <script>
 import L from 'leaflet'
+import * as supermap from '@supermap/iclient-leaflet';
 
 export default {
     name: "leaflet2",
@@ -17,6 +18,22 @@ export default {
     },
 
     methods: {
+        testmap() {
+            console.log("test")
+
+            var url = "https://iserver.supermap.io/iserver/services/map-world/rest/maps/World";
+            var map = L.map('map', {
+                crs: L.CRS.EPSG4326,
+                center: [0, 0],
+                maxZoom: 18,
+                zoom: 4
+            });
+            L.supermap.tiledMapLayer(url).addTo(map);
+        }
+    },
+
+    mounted() {
+        this.testmap()
     },
 
     created() {
