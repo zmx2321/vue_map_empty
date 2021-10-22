@@ -44,8 +44,8 @@ export default {
             // 设置地图地图
             this.resetMapLayer(cesiumViewer)
 
-            // this.addTxLayer(cesiumViewer);  // 添加腾讯底图
-            this.addGdLayer(cesiumViewer);  // 添加高德底图
+            this.addTxLayer(cesiumViewer);  // 添加腾讯底图
+            // this.addGdLayer(cesiumViewer);  // 添加高德底图
             
             // 绑定事件
             cesiumViewer.camera.changed.addEventListener(function (percentage) {
